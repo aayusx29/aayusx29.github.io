@@ -1,30 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Aayush Ghosh | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aayush Ghosh | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Aayush Ghosh</h1>
-  <p>exploring the world of code.</p>
 
-  <h2>About Me</h2>
-  <p>Self-taught developer currently learning Python and JavaScript, with C++ next on my list...</p>
+  <nav class="navbar">
+    <span class="logo"><span class="dot">.</span></span>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#connect">connect</a></li>
+    </ul>
+  </nav>
 
-  <h2>Skills</h2>
-  <ul>
-    <li>Python</li>
-    <li>JavaScript (learning)</li>
-    <li>C++ (upcoming)</li>
-  </ul>
+  <header class="hero">
+    <p class="eyebrow">// portfolio</p>
+    <h1 class="hero-name">Aayush Ghosh</h1>
+    <p class="hero-tagline">
+      <span id="typed-text"></span><span class="cursor">|</span>
+    </p>
+  </header>
 
-  <h2>Projects</h2>
-  <ul>
-    <li><a href="https://github.com/yourusername/repo1">Project 1</a></li>
-    <li><a href="https://github.com/yourusername/repo2">Project 2</a></li>
-  </ul>
+  <main>
+    <section id="about" class="section reveal">
+      <h2 class="section-title"><span class="tag">01</span> About Me</h2>
+      <p class="about-text">
+        Self-taught developer currently learning Python and JavaScript, with C++ next on the list.
+        I like figuring out how things work by breaking them first, then building something better.
+      </p>
+      <div class="skills">
+        <span class="skill-pill blue">Python</span>
+        <span class="skill-pill green">JavaScript — learning</span>
+        <span class="skill-pill outline">C++ — upcoming</span>
+      </div>
+    </section>
 
-  <h2>Connect</h2>
-  <p><a href="https://www.linkedin.com/in/aayush-ghosh-a9b446234">LinkedIn</a></p>
-  <p>Email: aayush.ghosh80@gmail.com</p>
+    <section id="projects" class="section reveal">
+      <h2 class="section-title"><span class="tag">02</span> Projects</h2>
+      <div class="project-grid">
+        <a class="project-card" href="https://github.com/yourusername/repo1" target="_blank" rel="noopener">
+          <div class="project-card-top">
+            <span class="project-icon">&lt;/&gt;</span>
+            <span class="arrow">↗</span>
+          </div>
+          <h3>Project 1</h3>
+          <p>View repository on GitHub</p>
+        </a>
+        <a class="project-card" href="https://github.com/yourusername/repo2" target="_blank" rel="noopener">
+          <div class="project-card-top">
+            <span class="project-icon">&lt;/&gt;</span>
+            <span class="arrow">↗</span>
+          </div>
+          <h3>Project 2</h3>
+          <p>View repository on GitHub</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="connect" class="section reveal">
+      <h2 class="section-title"><span class="tag">03</span> Connect</h2>
+      <div class="connect-grid">
+        <a class="connect-card" href="https://github.com/aayusx29" target="_blank" rel="noopener">
+          <span class="connect-label">GitHub</span>
+          <span class="connect-value">@aayusx29</span>
+        </a>
+        <a class="connect-card" href="https://www.linkedin.com/in/aayush-ghosh-a9b446234" target="_blank" rel="noopener">
+          <span class="connect-label">LinkedIn</span>
+          <span class="connect-value">aayush-ghosh</span>
+        </a>
+        <a class="connect-card" href="mailto:aayush.ghosh80@gmail.com">
+          <span class="connect-label">Email</span>
+          <span class="connect-value">aayush.ghosh80@gmail.com</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>designed &amp; built by Aayush Ghosh</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
